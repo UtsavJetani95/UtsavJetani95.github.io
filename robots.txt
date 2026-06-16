@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://utsavjetani95.github.io/sitemap.xml
