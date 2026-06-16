@@ -1,26 +1,129 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-rgb: 250, 250, 250;
+  --foreground-rgb: 9, 9, 11;
+  --accent-rgb: 37, 99, 235; /* Modern Electric Blue */
+  --accent-secondary-rgb: 79, 70, 229; /* Indigo */
+  
+  --card-bg-rgb: 255, 255, 255;
+  --card-border-rgb: 228, 228, 231;
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(228, 228, 231, 0.6);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* Fallback for prefers-color-scheme: dark unless user selects light mode */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    --background-rgb: 8, 8, 8;
+    --foreground-rgb: 244, 244, 245;
+    --accent-rgb: 59, 130, 246; /* Sky Blue */
+    --accent-secondary-rgb: 129, 140, 248; /* Light Indigo */
+    
+    --card-bg-rgb: 18, 18, 20;
+    --card-border-rgb: 39, 39, 42;
+    --glass-bg: rgba(18, 18, 20, 0.6);
+    --glass-border: rgba(39, 39, 42, 0.4);
   }
 }
 
+/* Explicit user theme choices set by JavaScript */
+[data-theme="dark"] {
+  --background-rgb: 8, 8, 8;
+  --foreground-rgb: 244, 244, 245;
+  --accent-rgb: 59, 130, 246;
+  --accent-secondary-rgb: 129, 140, 248;
+  
+  --card-bg-rgb: 18, 18, 20;
+  --card-border-rgb: 39, 39, 42;
+  --glass-bg: rgba(18, 18, 20, 0.6);
+  --glass-border: rgba(39, 39, 42, 0.4);
+}
+
+[data-theme="light"] {
+  --background-rgb: 250, 250, 250;
+  --foreground-rgb: 9, 9, 11;
+  --accent-rgb: 37, 99, 235;
+  --accent-secondary-rgb: 79, 70, 229;
+  
+  --card-bg-rgb: 255, 255, 255;
+  --card-border-rgb: 228, 228, 231;
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(228, 228, 231, 0.6);
+}
+
+@theme {
+  --color-background: rgb(var(--background-rgb));
+  --color-foreground: rgb(var(--foreground-rgb));
+  --color-accent: rgb(var(--accent-rgb));
+  --color-accent-secondary: rgb(var(--accent-secondary-rgb));
+  --color-card-bg: rgb(var(--card-bg-rgb));
+  --color-card-border: rgb(var(--card-border-rgb));
+  
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utility classes */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(var(--card-bg-rgb), 0.7) 0%, rgba(var(--card-bg-rgb), 0.4) 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.dark .glass-card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.4);
+}
+
+/* Fade-in animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
