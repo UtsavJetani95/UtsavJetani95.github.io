@@ -83,7 +83,7 @@ export default function Home() {
                 </span> Mobile Apps
               </h1>
               <p className="text-base md:text-lg text-zinc-600 dark:text-zinc-400 max-w-xl leading-relaxed">
-                Hi, I'm **Utsav Jetani**. I specialize in engineering high-performance Android & iOS applications with clean design aesthetics, seamless micro-interactions, and robust local-first architectures.
+                Hi, I'm <strong className="font-bold text-zinc-900 dark:text-white">Utsav Jetani</strong>. I specialize in engineering high-performance Android & iOS applications with clean design aesthetics, seamless micro-interactions, and robust local-first architectures.
               </p>
               
               <div className="flex flex-wrap gap-4 pt-2">
@@ -136,10 +136,10 @@ export default function Home() {
               </div>
               <div className="md:col-span-7 text-left space-y-4">
                 <p className="text-zinc-750 dark:text-zinc-300 leading-relaxed text-sm md:text-base">
-                  As a mobile app architect, I design interfaces that feel alive yet unobtrusive. I believe that premium software respects its users, which is why my creations prioritize **on-device processing, offline capabilities, and zero hidden tracking**.
+                  As a mobile app architect, I design interfaces that feel alive yet unobtrusive. I believe that premium software respects its users, which is why my creations prioritize <strong className="font-semibold text-zinc-900 dark:text-white">on-device processing, offline capabilities, and zero hidden tracking</strong>.
                 </p>
                 <p className="text-zinc-750 dark:text-zinc-300 leading-relaxed text-sm md:text-base">
-                  Whether developing cross-platform applications in **Flutter** or tuning platform optimizations using native **SwiftUI** and **Kotlin**, my focus is always on creating fluid, accessible, and store-compliant tools.
+                  Whether developing cross-platform applications in <strong className="font-semibold text-zinc-900 dark:text-white">Flutter</strong> or tuning platform optimizations using native <strong className="font-semibold text-zinc-900 dark:text-white">SwiftUI</strong> and <strong className="font-semibold text-zinc-900 dark:text-white">Kotlin</strong>, my focus is always on creating fluid, accessible, and store-compliant tools.
                 </p>
               </div>
             </div>
