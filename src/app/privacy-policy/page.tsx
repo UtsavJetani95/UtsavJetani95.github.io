@@ -31,7 +31,7 @@ export default function PrivacyPolicyHub() {
             <h1 className="text-3xl md:text-5xl font-extrabold text-zinc-900 dark:text-white tracking-tight">
               Privacy Policy Hub
             </h1>
-            <p className="text-sm md:text-base text-zinc-550 dark:text-zinc-450 leading-relaxed max-w-2xl">
+            <p className="text-sm md:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-2xl">
               We place the highest value on your trust and prioritize protecting your personal data. Below, you will find links to individual privacy policies required for Google Play Store and Apple App Store submissions.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function PrivacyPolicyHub() {
               </h3>
             </div>
             
-            <p className="text-xs text-zinc-550 dark:text-zinc-400 leading-relaxed">
+            <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
               In accordance with the Digital Personal Data Protection (DPDP) Act, 2023, the Information Technology Act, 2000, and standard GDPR requirements, if you have any questions, feedback, or grievances regarding our data privacy procedures, please contact our Consent Manager.
             </p>
 
@@ -92,7 +92,7 @@ export default function PrivacyPolicyHub() {
                 <Info className="w-4 h-4 text-zinc-400 shrink-0 mt-0.5" />
                 <div>
                   <span className="text-zinc-400 block text-[10px] uppercase font-bold tracking-wider">Consent Manager</span>
-                  <span className="text-zinc-750 dark:text-zinc-250 font-semibold mt-0.5 block">utsab jetani</span>
+                  <span className="text-zinc-800 dark:text-zinc-200 font-semibold mt-0.5 block">utsab jetani</span>
                 </div>
               </div>
               <div className="flex items-start gap-3 text-xs">

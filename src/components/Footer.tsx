@@ -30,7 +30,7 @@ export default function Footer() {
             <span className="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
               Utsav<span className="text-accent">.</span>
             </span>
-            <p className="text-sm text-zinc-550 dark:text-zinc-400 max-w-sm leading-relaxed">
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 max-w-sm leading-relaxed">
               Mobile app developer focused on crafting beautiful, high-performance, and privacy-first Android & iOS applications.
             </p>
             <div className="flex items-center gap-4.5 pt-2">
@@ -79,7 +79,7 @@ export default function Footer() {
             <div className="flex flex-col gap-2.5">
               <Link 
                 href="/privacy-policy"
-                className="text-sm font-semibold text-zinc-900 dark:text-zinc-150 hover:underline"
+                className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 hover:underline"
               >
                 Privacy Policy Hub
               </Link>

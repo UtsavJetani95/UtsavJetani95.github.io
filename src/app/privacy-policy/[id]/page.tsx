@@ -35,7 +35,7 @@ export default async function PrivacyPolicyPage({ params }: PageProps) {
             <div>
               <Link 
                 href="/privacy-policy" 
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-550 dark:text-zinc-400 hover:text-accent dark:hover:text-accent transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-600 dark:text-zinc-400 hover:text-accent dark:hover:text-accent transition-colors"
               >
                 <ArrowLeft className="w-3.5 h-3.5" />
                 <span>Privacy Hub</span>
@@ -48,7 +48,7 @@ export default async function PrivacyPolicyPage({ params }: PageProps) {
                 {policy.title}
               </h1>
               
-              <div className="flex flex-wrap gap-4 text-xs text-zinc-550 border-t border-card-border/30 pt-4">
+              <div className="flex flex-wrap gap-4 text-xs text-zinc-500 dark:text-zinc-400 border-t border-card-border/30 pt-4">
                 <div className="flex items-center gap-1.5">
                   <Calendar className="w-4 h-4 text-zinc-400" />
                   <span>Last Updated: <span className="font-semibold text-zinc-700 dark:text-zinc-300">{policy.lastUpdated}</span></span>

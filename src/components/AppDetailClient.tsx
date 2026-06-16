@@ -27,7 +27,7 @@ export default function AppDetailClient({ app }: AppDetailClientProps) {
       <div>
         <Link 
           href="/#apps" 
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-550 dark:text-zinc-450 hover:text-accent dark:hover:text-accent transition-colors"
+          className="inline-flex items-center gap-1.5 text-xs font-semibold text-zinc-600 dark:text-zinc-400 hover:text-accent dark:hover:text-accent transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Back to Store</span>
@@ -56,7 +56,7 @@ export default function AppDetailClient({ app }: AppDetailClientProps) {
               </div>
             </div>
             <p className="text-sm md:text-base font-semibold text-zinc-700 dark:text-zinc-350 leading-normal">{app.tagline}</p>
-            <p className="text-xs md:text-sm text-zinc-550 dark:text-zinc-400 leading-relaxed">{app.description}</p>
+            <p className="text-xs md:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{app.description}</p>
           </div>
 
           {/* Download CTA Badges */}
@@ -92,7 +92,7 @@ export default function AppDetailClient({ app }: AppDetailClientProps) {
               {app.features.map((feat, i) => (
                 <div key={i} className="flex items-start gap-2.5 p-3 rounded-xl bg-zinc-50 dark:bg-zinc-900/40 border border-card-border/40">
                   <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
-                  <span className="text-xs text-zinc-650 dark:text-zinc-350 leading-normal">{feat}</span>
+                  <span className="text-xs text-zinc-700 dark:text-zinc-300 leading-normal">{feat}</span>
                 </div>
               ))}
             </div>
@@ -115,7 +115,7 @@ export default function AppDetailClient({ app }: AppDetailClientProps) {
                     {openFaqIndex === i ? <Minus className="w-4 h-4 text-zinc-500" /> : <Plus className="w-4 h-4 text-zinc-500" />}
                   </button>
                   {openFaqIndex === i && (
-                    <div className="px-5 pb-4.5 pt-1 text-xs md:text-sm text-zinc-550 dark:text-zinc-400 leading-relaxed border-t border-card-border/30 animate-fade-in">
+                    <div className="px-5 pb-4.5 pt-1 text-xs md:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed border-t border-card-border/30 animate-fade-in">
                       {faqItem.answer}
                     </div>
                   )}
@@ -130,7 +130,7 @@ export default function AppDetailClient({ app }: AppDetailClientProps) {
               <Mail className="w-5 h-5 text-accent shrink-0 mt-0.5" />
               <div>
                 <h4 className="text-xs font-bold text-zinc-800 dark:text-zinc-200">Customer Support</h4>
-                <p className="text-[11px] text-zinc-450 mt-0.5">Need assistance or have bugs?</p>
+                <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">Need assistance or have bugs?</p>
                 <a href={`mailto:${app.supportEmail}`} className="text-xs font-semibold text-accent hover:underline mt-1 inline-block">
                   {app.supportEmail}
                 </a>
@@ -141,7 +141,7 @@ export default function AppDetailClient({ app }: AppDetailClientProps) {
               <FileText className="w-5 h-5 text-zinc-500 shrink-0 mt-0.5" />
               <div>
                 <h4 className="text-xs font-bold text-zinc-800 dark:text-zinc-200">Legal Compliance</h4>
-                <p className="text-[11px] text-zinc-450 mt-0.5">App Store & Play Store Policy</p>
+                <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">App Store & Play Store Policy</p>
                 <Link href={app.privacyPath} className="text-xs font-semibold text-accent hover:underline mt-1 inline-block">
                   Read Privacy Policy
                 </Link>

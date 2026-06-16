@@ -82,7 +82,7 @@ export default function Home() {
                   Privacy-First
                 </span> Mobile Apps
               </h1>
-              <p className="text-base md:text-lg text-zinc-550 dark:text-zinc-400 max-w-xl leading-relaxed">
+              <p className="text-base md:text-lg text-zinc-600 dark:text-zinc-400 max-w-xl leading-relaxed">
                 Hi, I'm **Utsav Jetani**. I specialize in engineering high-performance Android & iOS applications with clean design aesthetics, seamless micro-interactions, and robust local-first architectures.
               </p>
               
@@ -135,10 +135,10 @@ export default function Home() {
                 <div className="w-12 h-1 bg-accent rounded-full mt-3"></div>
               </div>
               <div className="md:col-span-7 text-left space-y-4">
-                <p className="text-zinc-650 dark:text-zinc-350 leading-relaxed text-sm md:text-base">
+                <p className="text-zinc-750 dark:text-zinc-300 leading-relaxed text-sm md:text-base">
                   As a mobile app architect, I design interfaces that feel alive yet unobtrusive. I believe that premium software respects its users, which is why my creations prioritize **on-device processing, offline capabilities, and zero hidden tracking**.
                 </p>
-                <p className="text-zinc-650 dark:text-zinc-350 leading-relaxed text-sm md:text-base">
+                <p className="text-zinc-750 dark:text-zinc-300 leading-relaxed text-sm md:text-base">
                   Whether developing cross-platform applications in **Flutter** or tuning platform optimizations using native **SwiftUI** and **Kotlin**, my focus is always on creating fluid, accessible, and store-compliant tools.
                 </p>
               </div>
@@ -196,7 +196,7 @@ export default function Home() {
                     className={`px-4.5 py-2 rounded-full text-xs font-semibold border transition-all ${
                       selectedCategory === cat 
                         ? 'bg-zinc-900 dark:bg-zinc-100 text-zinc-50 dark:text-zinc-900 border-zinc-900 dark:border-zinc-100 shadow-sm' 
-                        : 'bg-card-bg/60 border-card-border hover:bg-card-bg text-zinc-650 dark:text-zinc-350'
+                        : 'bg-card-bg/60 border-card-border hover:bg-card-bg text-zinc-600 dark:text-zinc-400'
                     }`}
                   >
                     {cat}
@@ -235,14 +235,14 @@ export default function Home() {
                       </div>
                       
                       <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-300 leading-normal">{app.tagline}</p>
-                      <p className="text-xs md:text-sm text-zinc-550 dark:text-zinc-400 leading-relaxed">{app.description}</p>
+                      <p className="text-xs md:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">{app.description}</p>
                       
                       {/* Features Bullet List */}
                       <div className="space-y-2 pt-1">
                         <div className="text-xs font-bold text-zinc-500 uppercase tracking-wide">Key Highlights</div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                           {app.features.map((feat, i) => (
-                            <div key={i} className="flex items-start gap-2 text-xs text-zinc-650 dark:text-zinc-350">
+                            <div key={i} className="flex items-start gap-2 text-xs text-zinc-750 dark:text-zinc-350">
                               <span className="text-accent mt-0.5">•</span>
                               <span>{feat}</span>
                             </div>
@@ -290,7 +290,7 @@ export default function Home() {
             {/* Contact text side */}
             <div className="lg:col-span-5 space-y-6 text-left">
               <h2 className="text-2xl md:text-4xl font-extrabold text-zinc-900 dark:text-white">Let's build something beautiful.</h2>
-              <p className="text-xs md:text-sm text-zinc-550 dark:text-zinc-400 leading-relaxed max-w-sm">
+              <p className="text-xs md:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-sm">
                 Have a mobile project, an app store compliance issue, or a custom widget design in mind? Drop me a message and let's align.
               </p>
               
