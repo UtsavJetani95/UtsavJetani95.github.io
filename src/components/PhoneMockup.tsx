@@ -349,7 +349,7 @@ function ChatScreen({ data }: { data: any }) {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Ask something..." 
-          className="flex-1 px-3 py-2 text-[10.5px] rounded-xl bg-zinc-950/60 border border-zinc-800 focus:outline-none focus:border-accent text-zinc-150 placeholder-zinc-650"
+          className="flex-1 px-3 py-2 text-[10.5px] rounded-xl bg-zinc-950/60 border border-zinc-800 focus:outline-none focus:border-accent text-zinc-100 placeholder-zinc-500"
         />
         <button 
           type="submit" 

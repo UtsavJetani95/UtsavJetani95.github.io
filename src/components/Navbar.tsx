@@ -65,7 +65,7 @@ export default function Navbar() {
           {/* Theme Toggle Button */}
           <button 
             onClick={toggleTheme}
-            className="p-2.5 rounded-full border border-card-border/60 hover:bg-card-bg/50 text-zinc-650 dark:text-zinc-350 transition-all hover:scale-105"
+            className="p-2.5 rounded-full border border-card-border/60 hover:bg-card-bg/50 text-zinc-600 dark:text-zinc-400 transition-all hover:scale-105"
             aria-label="Toggle dark mode"
           >
             {theme === 'light' ? <Moon className="w-4 h-4" /> : <Sun className="w-4 h-4" />}
@@ -85,7 +85,7 @@ export default function Navbar() {
           {/* Mobile Menu Icon */}
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2.5 rounded-full border border-card-border/60 text-zinc-650 dark:text-zinc-350 md:hidden hover:bg-card-bg/50 transition-all"
+            className="p-2.5 rounded-full border border-card-border/60 text-zinc-600 dark:text-zinc-400 md:hidden hover:bg-card-bg/50 transition-all"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}

@@ -23,8 +23,8 @@ export function markdownToHtml(markdown: string): string {
   html = html.replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-zinc-900 dark:text-zinc-100">$1</strong>');
 
   // Bullet points
-  html = html.replace(/^\* (.*?)$/gm, '<li class="ml-6 list-disc text-zinc-600 dark:text-zinc-350 my-1.5">$1</li>');
-  html = html.replace(/^- (.*?)$/gm, '<li class="ml-6 list-disc text-zinc-600 dark:text-zinc-350 my-1.5">$1</li>');
+  html = html.replace(/^\* (.*?)$/gm, '<li class="ml-6 list-disc text-zinc-600 dark:text-zinc-400 my-1.5">$1</li>');
+  html = html.replace(/^- (.*?)$/gm, '<li class="ml-6 list-disc text-zinc-600 dark:text-zinc-400 my-1.5">$1</li>');
 
   // Horizontal rules
   html = html.replace(/^---$/gm, '<hr class="my-8 border-zinc-200 dark:border-zinc-800" />');
@@ -46,7 +46,7 @@ export function markdownToHtml(markdown: string): string {
       return line;
     }
     
-    return `<p class="text-zinc-650 dark:text-zinc-350 leading-relaxed my-4">${line}</p>`;
+    return `<p class="text-zinc-700 dark:text-zinc-400 leading-relaxed my-4">${line}</p>`;
   });
 
   return processedLines.join('\n');
